@@ -1,0 +1,10 @@
+Device,Interface,IP Address,Subnet Mask,VLAN,Role
+R2,G0/0/0,10.0.1.253,/24,N/A,HSRP Backup role
+R2,G0/0/1,203.0.113.1,/30,N/A,Connection to R3
+R1,G0/0/0,10.0.1.252,/24,N/A,HSRP Active role
+R1,G0/0/1,203.0.113.5 ,/30,N/A,Connection to R3
+R3,Loopback 0,8.8.8.8,/32,N/A,Simulated internet
+R3,G0/0/0,203.0.113.2,/30,N/A,Connection to R1
+R3,G0/0/1,203.0.113.6,/30,N/A,Connection to R2
+PC1,F0/0,10.0.1.1,/24,N/A,End Host
+PC2,F0/0,10.0.1.2,/24,N/A,End Host
